@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Teori </title>
+    <style>
+        /* Gaya tampilan rapi */
+
+    
+    body.rapi {
+        font-family: Arial, sans-serif;
+        color: #2c3e50;
+       
+       background-color: #0189af;
+        background-size: cover; /* Agar gambar memenuhi layar */
+        background-position: center;
+        background-repeat: no-repeat;
+        line-height: 1.6;
+        padding: 20px;
+        transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+        h1 {
+            color: #3498db;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #2980b9;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: color 0.3s ease;
+        }
+        h3:hover {
+            color: #1abc9c;
+            text-decoration: underline;
+        }
+        .content {
+            margin: 10px 0;
+            padding: 15px;
+            display: block;
+            border-left: 4px solid #3498db;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            transition: max-height 0.4s ease;
+        }
+        /* Tombol Gaya */
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #23c297;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+        button:hover {
+            background-color: #27b1ed;
+        }
+        /* Gaya tampilan berantakan */
+        body.berantakan {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #7b2117;
+            background-color: #2c3e50;
+        }
+        h1, h2, h3 {
+            color: #f91616;
+        }
+        .content {
+            background-color: #7ef0ff;
+            color: #c0392b;
+            border-left: 4px solid #e74c3c;
+        }
+        /* Gaya gambar rapi dengan Flexbox */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        img {
+            width: 500px; /* Atur lebar gambar */
+            height: auto; /* Memastikan proporsi tetap */
+            size: '100px';
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.1); /* Zoom-in pada hover */
+        }
+        /* Aturan untuk tampilan di layar kecil */
+        @media (max-width: 900px) {
+            img {
+                width: 200px; /* Sesuaikan lebar untuk layar kecil */
+            }
+        }
+        
+    </style>
+</head>
+<body class="rapi">
+    
+    <h1>LAPORAN TEORI </h1>
+    <h2>Muh Baqir Zahran Sudirman | 202331215</h2>
+
+    <button onclick="toggleMode()">Ganti Mode Tampilan</button>
+
+    <!-- Bagian konten -->
+    <h3 onclick="toggleContent(this)">Mengapa menggunakan CSS dan JavaScript dalam pemrograman web?</h3>
+    <p class="content">1.	CSS
+        CSS adalah seperangkat alat untuk membuat dan memodifikasi jenis huruf, peringatan, warna, bentuk, dan elemen terkait gaya lainnya yang tidak dapat dilakukan menggunakan elemen HTML. Bisa dikatakan bahwa CSS adalah kepanjangan dari HTML untuk pemformatan dokumen web. CSS apa pun memudahkan Anda membuat dan memelihara situs web karena CSS mengintegrasikan presentasi dan kode web yang baru dibuat. 
+        2.	JavaScript
+        JavaScript adalah bahasa pemrograman yang paling umum digunakan untuk membuat aplikasi berbasis web. Bahasa ini dapat membuat website lebih logis -- membuatnya lebih interaktif. JavaScript memberi developer kemampuan untuk menerapkan fitur kompleks pada halaman web. Setiap kali halaman web menampilkan informasi statis untuk pengguna, seperti pembaruan konten secara live, peta interaktif, animasi 2D/3D, slider video/musik, dan lain-lain, dapat dipastikan bahwa web tersebut menggunakan JavaScript. 
+        </p>
+
+    <h3 onclick="toggleContent(this)">Bagaimana CSS dan JavaScript dapat diintegrasikan dalam pemrograman web?</h3>
+    <p class="content">1.	CSS
+        Menggunakan CSS (Cascading Style Sheets), kita dapat menerapkan gaya ke halaman web kita agar terlihat persis seperti yang kita inginkan. Ini berfungsi karena CSS terhubung ke DOM (Document Object Model). Dengan CSS dan integrasinya dengan DOM, kita dapat dengan cepat dan mudah menata ulang elemen apa pun.  Cara untuk mengintegrasikan CSS ke halam web ada 2 cara yaitu eksternal dan internal.Eksternal dengan membuat sebuah file CSS kemudian membuat link dalam file html ( link) kemudian Di dalam text editor, simpan file menggunakan nama css.html, pastikan tidak ada spasi atau karakter lain dalam nama file. File harus disimpan di dalam root dokumen Anda. sedangkan secara internal dengan menggunakan tag style dalam halaman HTML dan memanggil satu persatu tag yang ingin di desain.
+        2.	Javascript
+        memasukkan JavaScript ke dalam halaman. kita dapat menambahkan JavaScript langsung ke file HTML, mereferensikan file JavaScript terpisah, atau melakukan keduanya — dan kami membantu kita memahami kapan setiap opsi sesuai.
+        Terdapat 2 cara yaitu eksternal dan internal. Cara eksternal enambahkan JavaScript adalah dengan menggunakan file JavaScript eksternal kemudian menambahkan JavaScript eksternal dengan menggunakan atribut src <=script type=”text/javascript” src=”externalfile.js”script  sedangkan cara internal yaitu Menambahkan tag JavaScript, menambahkan JavaScript ke halaman dengan tag <=script> 
+        </p>
+
+    <h3 onclick="toggleContent(this)">Jelaskan apa saja keuntungan menggunakan JavaScript dan CSS?</h3>
+    <p class="content">1.	Keuntungan CSS
+        menggukan css akan mempermuadah loading halaman web, memudahkan pengolahan kode, menawarkan lebih banyak variasi tampilan.membuat website lebih rapi disemua ukuran. 
+        2.	JavaScript
+        bahasa pemrograman yang digunakan dalam pengembangan website agar lebih dinamis dan interaktif. Serta Menambahkan interaktivitas pada halaman web,seperti animasi,validasi form, dan manipulasi DOM,Dapat digunakan untuk membangun aplikasi berbasis web tanpa perlu me-refresh halaman secara keseluruhan danmemungkinkan pengembangan aplikasi web yang lebih dinamis dan responsive.
+        </p>
+
+    <h3 onclick="toggleContent(this)">Jelaskan apa saja keuntungan menggunakan Bootstrap?</h3>
+    <p class="content">Keuntungan boostrap memiliki fitur yang lengkap, dapat membantu perusahaan perbankan dalam membangun website yang responsif, cepat, dan modern. Dengan menggunakan Bootstrap, perusahaan dapat menghemat waktu dan biaya dalam pengembangan website, karena Bootstrap menyediakan komponen- komponen siap pakai yang dapat digunakan untuk mempercepat proses pengembangan.Desain yang responsif sehingga bisa diakses oleh beragam perangkat, Memiliki dukungan javascript sehingga desain yang dibuat lebih interaktif,dan fleksibel setiap penggunaannya bisa menggunakan frame sehingga lebih cepat. </p>
+
+    <h3 onclick="toggleContent(this)">Contoh penggunaan Bootstrap</h3>
+    <p class="content">Grid System digunakan untuk membagi halaman website menjadi beberapa kolom dan baris sehingga tampilan website menjadi lebih terstruktur dan mudah dibaca oleh pengunjung. Navbar digunakan untuk navigasi pada website, Form digunakan untuk mengambil input dari pengunjung, dan Button digunakan untuk membuat tombol- tombol yang interaktif pada website. Navbar (singkatan dari navigation bar) adalah elemen antarmuka pengguna yang berfungsi sebagai menu navigasi utama pada halaman web atau aplikasi. Dengan navbar, pengguna dapat berpindah antara halaman atau bagian penting dalam situs dengan mudah. Biasanya, navbar diletakkan di bagian atas halaman dan berisi tautan seperti "Home," "About," "Services," dan "Contact.".</p>
+    <style>img {
+        width: 100px; /* Atur lebar gambar */
+        height: auto; /* Memastikan proporsi tetap */
+        margin: 5px;  /* Menambahkan jarak antar gambar */
+        size: 100px;
+    }
+    
+    /* Aturan untuk tampilan di layar kecil */
+    @media (max-width: 768px) {
+        img {
+            width: 80px; /* Sesuaikan lebar untuk layar kecil */
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="Jepretan Layar 2024-11-10 pukul 9.20.13 PM.png" alt="pada tampilan handphone">
+        <img src="Jepretan Layar 2024-11-10 pukul 9.20.51 PM.png" alt="pada tampilan pc">
+    </div>
+
+    <script>
+        function toggleContent(element) {
+            let content = element.nextElementSibling;
+            content.style.display = (content.style.display === "none") ? "block" : "none";
+            element.style.color = content.style.display === "none" ? "#2980b9" : "#1abc9c";
+        }
+
+        function toggleMode() {
+            document.body.classList.toggle("rapi");
+            document.body.classList.toggle("berantakan");
+        }
+    </script>
+</body>
+</html>
